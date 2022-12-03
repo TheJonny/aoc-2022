@@ -2,7 +2,7 @@ use v5.36;
 
 my $things = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 my $res = 0;
-while (my $a = <STDIN> and my $b = <STDIN> and my $c = <STDIN> ) {
+while (defined(my $a = <STDIN>) and defined(my $b = <STDIN>) and defined(my $c = <STDIN> )) {
 	chomp($a); chomp($b); chomp ($c);
 	
 	my $value = 1;
