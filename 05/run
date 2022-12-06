@@ -1,0 +1,6 @@
+#!/usr/bin/env escript
+main(_) ->
+	case compile:file(aoc_05) of
+		{ok, _} -> aoc_05:run();
+		error -> halt(1)
+	end.
